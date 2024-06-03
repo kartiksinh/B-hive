@@ -30,12 +30,12 @@ import appStoreIcon from "../../assests/images/appstore.png";
 import mobileIcon2 from "../../assests/images/bhive2.png";
 
 import { Container, Grid, Typography } from "@mui/material";
-import { useMediaQuery } from "@material-ui/core";
+// import { useMediaQuery } from "@material-ui/core";
 
 const Home = () => {
   const workingSpaces = useSelector((state: any) => state.workingSpaces);
   const imageArray = [space1, space2, space3, space4, space5];
-  const isMobile = useMediaQuery("(max-width:600px)");
+  // const isMobile = useMediaQuery("(max-width:600px)");
   return (
     <div>
       <Grid mb={4}>
@@ -74,10 +74,14 @@ const Home = () => {
             ></Grid>
 
             <Typography
-              fontSize={isMobile ? 20 : 58}
-              fontWeight={isMobile ? 600 : 700}
-              width={isMobile ? 322 : 806}
-              height={isMobile ? 62 : 254}
+              // fontSize={isMobile ? 20 : 58}
+              fontSize={58}
+              // fontWeight={isMobile ? 600 : 700}
+              fontWeight={700}
+              // width={isMobile ? 322 : 806}
+              width={806}
+              // height={isMobile ? 62 : 254}
+              height={254}
               align="center"
               style={{
                 color: "#000",
@@ -112,8 +116,10 @@ const Home = () => {
               }}
             >
               <Video
-                height={isMobile ? 320 : 388}
-                width={isMobile ? 320 : 388}
+                // height={isMobile ? 320 : 388}
+                height={388}
+                // width={isMobile ? 320 : 388}
+                width={388}
               />
             </div>
           </Grid>
